@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-transform-remote-react-styl",
+  "name": "babel-plugin-transform-remove-react-styl",
   "version": "1.0.1",
   "description": "",
-  "repository": "nick/babel-plugin-transform-remote-react-styl",
+  "repository": "nick/babel-plugin-transform-remove-react-styl",
   "license": "MIT",
   "main": "lib/index.js",
   "devDependencies": {
