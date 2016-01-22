@@ -1,11 +1,11 @@
-# babel-plugin-transform-remote-react-styl
+# babel-plugin-transform-remove-react-styl
 
 
 
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-remote-react-styl
+$ npm install babel-plugin-transform-remove-react-styl
 ```
 
 ## Usage
@@ -16,20 +16,20 @@ $ npm install babel-plugin-transform-remote-react-styl
 
 ```json
 {
-  "plugins": ["transform-remote-react-styl"]
+  "plugins": ["transform-remove-react-styl"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins transform-remote-react-styl script.js
+$ babel --plugins transform-remove-react-styl script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-remote-react-styl"]
+  plugins: ["transform-remove-react-styl"]
 });
 ```

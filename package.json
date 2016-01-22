@@ -1,19 +1,23 @@
 {
   "name": "babel-plugin-transform-remove-react-styl",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
-  "repository": "nick/babel-plugin-transform-remove-react-styl",
+  "repository": "nick/nick-babel-plugin-transform-remove-react-styl",
   "license": "MIT",
   "main": "lib/index.js",
   "devDependencies": {
-    "babel": "^5.6.0"
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5"
   },
   "scripts": {
-    "build": "babel-plugin build",
-    "push": "babel-plugin publish",
-    "test": "babel-plugin test"
+    "build": "babel --presets es2015 src --out-dir lib --copy-files",
+    "clean": "rm -rf lib",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
     "babel-plugin"
-  ]
+  ],
+  "babel": {
+    "presets": ["es2015"]
+  }
 }
