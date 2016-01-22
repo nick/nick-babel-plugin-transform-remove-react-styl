@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-remove-react-styl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "repository": "nick/babel-plugin-transform-remove-react-styl",
   "license": "MIT",
