@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-transform-remote-react-styl",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "nick/babel-plugin-transform-remote-react-styl",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel": "^5.6.0"
+  },
+  "scripts": {
+    "build": "babel-plugin build",
+    "push": "babel-plugin publish",
+    "test": "babel-plugin test"
+  },
+  "keywords": [
+    "babel-plugin"
+  ]
+}
