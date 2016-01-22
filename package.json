@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-remote-react-styl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": "nick/babel-plugin-transform-remote-react-styl",
   "license": "MIT",
