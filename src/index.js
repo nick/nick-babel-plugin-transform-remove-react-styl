@@ -3,13 +3,13 @@ export default function ({ types: t }) {
     visitor: {
       CallExpression(path) {
         let callee = path.get('callee');
-        let args = path.get('arguments');
-        if (
-            callee.isIdentifier({ name: 'require' }) &&
-            args.length > 0 &&
-            args[0].isStringLiteral({ value: 'react-styl' })
-        ) {
-            path.parentPath.remove();
+        if (callee.isCallExpression()) {
+          	let innerCallee = callee.get('callee');
+            let innerArgs = callee.get('arguments');
+	        if (innerCallee && innerCallee.isIdentifier({ name: 'require' }) &&
+        	    innerArgs.length > 0 && innerArgs[0].isStringLiteral({ value: 'react-styl' })){
+    	        path.parentPath.remove();
+	        }
         }
       }
     }
